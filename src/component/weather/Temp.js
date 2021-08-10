@@ -8,7 +8,7 @@ const Temp = () => {
 
   const getWeatherInfo = async () => {
     try {
-      let url = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=84f2622ba538e60ec23afb8154b1fcaf`;
+      let url = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=0e948b3ecd877b785634d8ebdd15621e`;
       const res = await fetch(url);
       const data = await res.json();
       const { temp, humidity, pressure } = data.main;
